@@ -1,0 +1,945 @@
+﻿node.exe : npm warn ERESOLVE 
+overriding peer dependency
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Users\chhaya jay\AppData\Roa 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
+    + CategoryInfo          : Not 
+   Specified: (npm warn ERESOL..  
+  .peer dependency:String) [],    
+ RemoteException
+    + FullyQualifiedErrorId : Nat 
+   iveCommandError
+ 
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn ERESOLVE overriding peer 
+dependency
+npm warn While resolving: 
+app@0.1.0
+npm warn Found: react@19.2.0
+npm warn node_modules/react
+npm warn   react@"19.0.0" from 
+the root project
+npm warn   85 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm warn
+npm warn Could not resolve 
+dependency:
+npm warn peer react@"^19.2.0" 
+from react-dom@19.2.0
+npm warn node_modules/react-dom
+npm warn   react-dom@"19.0.0" 
+from the root project
+npm warn   55 more 
+(@floating-ui/react-dom, 
+@radix-ui/react-accordion, ...)
+npm error code ERESOLVE
+npm error ERESOLVE could not 
+resolve
+npm error
+npm error While resolving: 
+autumn-js@0.1.63
+npm error Found: 
+better-auth@1.3.10
+npm error node_modules/better-auth
+npm error   better-auth@"1.3.10" 
+from the root project
+npm error
+npm error Could not resolve 
+dependency:
+npm error peerOptional 
+better-auth@"^1.3.17" from 
+autumn-js@0.1.63
+npm error node_modules/autumn-js
+npm error   autumn-js@"^0.1.43" 
+from the root project
+npm error
+npm error Conflicting peer 
+dependency: better-auth@1.4.10
+npm error node_modules/better-auth
+npm error   peerOptional 
+better-auth@"^1.3.17" from 
+autumn-js@0.1.63
+npm error   node_modules/autumn-js
+npm error     autumn-js@"^0.1.43" 
+from the root project
+npm error
+npm error Fix the upstream 
+dependency conflict, or retry
+npm error this command with 
+--force or --legacy-peer-deps
+npm error to accept an incorrect 
+(and potentially broken) 
+dependency resolution.
+npm error
+npm error
+npm error For a full report see:
+npm error C:\Users\chhaya jay\AppD
+ata\Local\npm-cache\_logs\2026-01-
+03T05_41_57_421Z-eresolve-report.t
+xt
+npm error A complete log of this 
+run can be found in: 
+C:\Users\chhaya jay\AppData\Local\
+npm-cache\_logs\2026-01-03T05_41_5
+7_421Z-debug-0.log

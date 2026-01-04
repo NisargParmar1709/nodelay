@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: #F1EFE7;
+  --color-foreground: #111111;
+
+  --color-card: #FFFFFF;
+  --color-card-foreground: #111111;
+
+  --color-popover: #FFFFFF;
+  --color-popover-foreground: #111111;
+
+  --color-primary: #D9F01B;
+  --color-primary-foreground: #111111;
+
+  --color-secondary: #111111;
+  --color-secondary-foreground: #F1EFE7;
+
+  --color-muted: #E5E3DA;
+  --color-muted-foreground: #4B5563;
+
+  --color-accent: #D9F01B;
+  --color-accent-foreground: #111111;
+
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #fafafa;
+
+  --color-border: #111111;
+  --color-input: #111111;
+  --color-ring: #D9F01B;
+
+  --color-chart-1: #748347;
+  --color-chart-2: #D9F01B;
+  --color-chart-3: #111111;
+  --color-chart-4: #E5E7EB;
+  --color-chart-5: #FFFFFF;
+
+  --color-sidebar: #F1EFE7;
+  --color-sidebar-foreground: #111111;
+  --color-sidebar-primary: #D9F01B;
+  --color-sidebar-primary-foreground: #111111;
+  --color-sidebar-accent: #E5E3DA;
+  --color-sidebar-accent-foreground: #4B5563;
+  --color-sidebar-border: #111111;
+  --color-sidebar-ring: #D9F01B;
+
+  --color-brand-chartreuse: #D9F01B;
+  --color-brand-cream: #F1EFE7;
+  --color-brand-dark: #111111;
+  --color-brand-footer: #222222;
+  --color-brand-olive: #748347;
+
+  --font-display: "Lora", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --radius-lg: 12px;
+  --radius-md: 8px;
+  --radius-sm: 4px;
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-border);
+  }
+
+  :root {
+    --background: #F1EFE7;
+    --foreground: #111111;
+    --card: #FFFFFF;
+    --card-foreground: #111111;
+    --popover: #FFFFFF;
+    --popover-foreground: #111111;
+    --primary: #D9F01B;
+    --primary-foreground: #111111;
+    --secondary: #111111;
+    --secondary-foreground: #F1EFE7;
+    --muted: #E5E3DA;
+    --muted-foreground: #4B5563;
+    --accent: #D9F01B;
+    --accent-foreground: #111111;
+    --destructive: #ef4444;
+    --destructive-foreground: #fafafa;
+    --border: #111111;
+    --input: #111111;
+    --ring: #D9F01B;
+    --radius: 0.75rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    font-weight: 300;
+    line-height: 1.5;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--foreground);
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 1.25;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+  }
+
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 1408px;
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 7rem;
+      padding-right: 7rem;
+    }
+  }
+
+  .font-serif {
+    font-family: var(--font-display);
+  }
+
+  .font-technical {
+    font-family: var(--font-sans);
+    font-weight: 300;
+  }
+
+  .btn-split {
+    display: inline-flex;
+    align-items: stretch;
+    border: 1px solid var(--color-brand-dark);
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 0.875rem;
+    overflow: hidden;
+  }
+
+  .btn-split-text {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-brand-chartreuse);
+  }
+
+  .btn-split-icon {
+    padding: 0.75rem;
+    background-color: var(--color-brand-chartreuse);
+    border-left: 1px solid var(--color-brand-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-industrial {
+    background-color: var(--color-card);
+    border: 1px solid var(--color-brand-dark);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .section-spacing {
+    padding-top: 8.5rem;
+    padding-bottom: 8.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

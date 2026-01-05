@@ -111,20 +111,20 @@ export default function UseCasesSection({
   }
 
   return (
-    <section ref={ref} className="py-12 lg:py-16 bg-[#F2F1E9]" aria-labelledby="usecases-title">
-      <div className="max-w-[1200px] mx-auto px-6 sm:px-8 lg:px-10">
+    <section ref={ref} className="bg-[#F2F1E9] section-shell section-shell--compact" aria-labelledby="usecases-title">
+      <div className="section-shell__inner">
         {/* Header + layout switcher */}
         <div className={`flex flex-col sm:flex-row sm:items-start sm:justify-between mb-10 gap-4`}>
           <div className="flex-1">
-            <h2 id="usecases-title" className="text-3xl sm:text-4xl lg:text-5xl font-display font-semibold text-[#111111] leading-tight">
+            <h2 id="usecases-title" className="heading-section text-[#111111]">
               NoDelay in action
             </h2>
-            <p className="mt-3 text-[#4B5563] font-sans font-light max-w-[60ch] text-base">
+            <p className="mt-3 body-lead text-[#4B5563] max-w-[60ch]">
               Helping you automate, analyze, and build intelligent systems that drive real business value
             </p>
           </div>
 
-          <div className="flex items-center gap-3 flex-shrink-0">
+          <div className="flex flex-wrap items-center justify-center sm:justify-end gap-3">
             <div className="text-sm text-[#4B5563] hidden sm:block font-sans">Layout</div>
             <div className="inline-flex items-center gap-2 bg-white border border-[#111111] rounded-[8px] p-1 shadow-sm">
               <button
@@ -167,7 +167,7 @@ export default function UseCasesSection({
         )}
 
         {layout === "split" && (
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
             <div className="space-y-4">
               {features.slice(0, 3).map((f, i) => (
                 <div
@@ -211,9 +211,9 @@ export default function UseCasesSection({
                 ))}
               </div>
 
-              <div className="mt-6 flex items-center gap-3">
-                <a href="#contact" className="inline-flex items-center px-5 py-2.5 bg-[#111111] text-[#D9F01B] font-display font-semibold rounded-[8px] shadow-sm hover:shadow-[2px_2px_0px_#748347] transition-all">Get a demo</a>
-                <button className="text-sm text-[#111111] font-display font-medium underline hover:text-[#748347] transition-colors">See case studies</button>
+              <div className="mt-6 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                <a href="#contact" className="inline-flex items-center justify-center px-5 py-2.5 bg-[#111111] text-[#D9F01B] font-display font-semibold rounded-[8px] shadow-sm hover:shadow-[2px_2px_0px_#748347] transition-all w-full sm:w-auto">Get a demo</a>
+                <button className="text-sm text-[#111111] font-display font-medium underline hover:text-[#748347] transition-colors text-left sm:text-center">See case studies</button>
               </div>
             </div>
 
@@ -224,7 +224,7 @@ export default function UseCasesSection({
 
               {/* floating card */}
               <div
-                className="absolute -top-6 right-6 bg-white border border-[#111111] rounded-[12px] p-4 shadow-sm"
+                className="absolute -top-8 right-4 sm:right-6 bg-white border border-[#111111] rounded-[12px] p-4 shadow-sm"
                 style={{
                   transform: isVisible && !reduceMotion ? "translateY(0)" : "translateY(20px)",
                   opacity: isVisible ? 1 : 0,

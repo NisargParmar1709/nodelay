@@ -24,13 +24,13 @@ const creations = [
 
 export default function OurCreations() {
   return (
-    <section id="creations" className="bg-white py-24 sm:py-32 px-6 sm:px-[3.5rem] lg:px-[4.5rem] xl:px-[7rem]">
-      <div className="max-w-[88rem] mx-auto">
+    <section id="creations" className="bg-white section-shell">
+      <div className="section-shell__inner">
         <div className="text-center mb-16">
-          <h2 className="font-display text-[40px] md:text-[48px] font-medium leading-[1.15] text-[#1A1A1A] mb-4">
+          <h2 className="heading-section text-[#1A1A1A] mb-4">
             Our Creations
           </h2>
-          <p className="font-sans font-light text-[18px] text-[#4B5563] max-w-[640px] mx-auto">
+          <p className="body-lead text-[#4B5563] max-w-[640px] mx-auto">
             These working tools demonstrate NoDelay's capability and build trust through real products.
           </p>
         </div>

@@ -75,7 +75,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section ref={sectionRef} id="how-it-works" className="bg-[#F1EFE7] py-12 lg:py-16 border-t border-[#111111]/10 overflow-hidden">
+    <section ref={sectionRef} id="how-it-works" className="bg-[#F1EFE7] section-shell section-shell--compact border-t border-[#111111]/10 overflow-hidden">
       <style jsx>{`
         @keyframes dash-flow {
           to { stroke-dashoffset: -20; }
@@ -99,25 +99,25 @@ const HowItWorks = () => {
         }
       `}</style>
 
-      <div className="container mx-auto px-6 sm:px-[3.5rem] lg:px-[4.5rem] xl:px-[7rem] max-w-[88rem]">
+      <div className="section-shell__inner">
         <div className={`flex flex-col items-center text-center mb-12 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <h2 className="font-display text-[40px] md:text-[48px] leading-[1.15] font-medium text-[#111111] mb-6">
+          <h2 className="heading-section text-[#111111] mb-6">
             How NoDelay works
           </h2>
-          <p className="font-sans text-[18px] leading-[1.6] font-light text-[#4B5563] max-w-[640px] mb-10">
+          <p className="body-lead text-[#4B5563] max-w-[640px] mb-10">
             From discovery to deployment—demo-first delivery with quality & stability.
           </p>
           
-          <div className="flex flex-col sm:flex-row items-center gap-4">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 w-full sm:w-auto">
             <a 
               href="#creations" 
-              className="inline-flex items-center justify-center px-8 py-3 bg-[#D9F01B] border border-[#111111] font-display font-medium text-[14px] hover:bg-[#111111] hover:text-white transition-colors duration-200"
+              className="inline-flex items-center justify-center px-8 py-3 bg-[#D9F01B] border border-[#111111] font-display font-medium text-[14px] hover:bg-[#111111] hover:text-white transition-colors duration-200 w-full sm:w-auto"
             >
               See our creations
             </a>
             <a 
               href="#contact" 
-              className="inline-flex items-center justify-center px-8 py-3 bg-white border border-[#111111] font-display font-medium text-[14px] hover:bg-[#111111] hover:text-white transition-colors duration-200"
+              className="inline-flex items-center justify-center px-8 py-3 bg-white border border-[#111111] font-display font-medium text-[14px] hover:bg-[#111111] hover:text-white transition-colors duration-200 w-full sm:w-auto"
             >
               Book a demo
             </a>

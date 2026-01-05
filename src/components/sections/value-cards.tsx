@@ -19,9 +19,9 @@ export default function SolutionsShowcase() {
   return (
     <section
       ref={sectionRef}
-      className="bg-[#F2F1E9] py-16 px-6 sm:px-[3.5rem] lg:px-[4.5rem] xl:px-[7rem]"
+      className="bg-[#F2F1E9] section-shell section-shell--compact"
     >
-      <div className="max-w-[88rem] mx-auto">
+      <div className="section-shell__inner">
         {/* Heading */}
         <div
           className={`text-center max-w-3xl mx-auto mb-16 transition-all duration-700 ${
@@ -31,17 +31,17 @@ export default function SolutionsShowcase() {
           <p className="text-sm font-semibold uppercase tracking-widest text-brand-olive mb-4">
             What we deliver
           </p>
-          <h2 className="text-3xl md:text-5xl font-medium text-[#1A1A1A] font-display leading-tight">
+          <h2 className="heading-section text-[#1A1A1A]">
             Practical AI systems with measurable results
           </h2>
-          <p className="mt-4 text-lg text-[#4B5563]">
+          <p className="mt-4 body-lead text-[#4B5563]">
             We ship automation, orchestration, and custom AI products with clear demos
             so value is visible early.
           </p>
         </div>
 
         {/* Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           {/* LEFT — Cards */}
           <div className="space-y-6">
             {[
@@ -106,7 +106,7 @@ export default function SolutionsShowcase() {
                     </p>
 
                     {/* Proof */}
-                    <div className="mt-4 flex gap-4 text-sm text-[#374151]">
+                    <div className="mt-4 flex flex-wrap gap-4 text-sm text-[#374151]">
                       <span className="flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-[#6EA05F]" />
                         Reliable
@@ -134,19 +134,19 @@ export default function SolutionsShowcase() {
           {/* RIGHT — Product Preview */}
           <div className="relative">
             {/* Floating stats */}
-            <div className="absolute -top-6 right-6 bg-white rounded-xl border px-4 py-3 shadow-sm">
+            <div className="absolute -top-6 right-4 sm:right-6 bg-white rounded-xl border px-4 py-3 shadow-sm">
               <p className="text-xs text-gray-500">Monthly throughput</p>
               <p className="text-lg font-semibold">$8.5M</p>
               <p className="text-xs text-green-600">+3.3%</p>
             </div>
 
-            <div className="absolute -bottom-6 left-6 bg-white rounded-xl border px-4 py-3 shadow-sm">
+            <div className="absolute -bottom-6 left-4 sm:left-6 bg-white rounded-xl border px-4 py-3 shadow-sm">
               <p className="text-xs text-gray-500">Avg latency</p>
               <p className="text-sm font-semibold">820ms</p>
             </div>
 
             {/* SVG Preview */}
-            <div className="bg-white rounded-2xl border border-black/10 p-6">
+            <div className="bg-white rounded-2xl border border-black/10 p-5 sm:p-6">
               <svg viewBox="0 0 520 340" className="w-full h-auto">
                 <text x="16" y="24" fontSize="14" fill="#6B7280">
                   Product preview

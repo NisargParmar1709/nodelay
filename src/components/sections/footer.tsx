@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 
 const Footer = () => {
   const footerLinks = [
@@ -29,8 +30,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#222222] text-[#F1EFE7] pt-20 lg:pt-28 pb-10">
-      <div className="container mx-auto px-6 sm:px-[3.5rem] lg:px-[4.5rem] xl:px-[7rem] max-w-[88rem]">
+    <footer className="bg-[#222222] text-[#F1EFE7] pt-20 lg:pt-28 pb-10 layout-inline--narrow">
+      <div className="section-shell__inner">
         <div className="flex flex-col lg:flex-row justify-between gap-16 mb-16">
           <div className="flex flex-col max-w-md">
             <span className="font-display text-[32px] lg:text-[40px] font-semibold text-[#D9F01B] tracking-tight mb-6">
@@ -82,8 +83,8 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-start md:items-center text-[13px] font-sans text-gray-400">
             <span>&copy; {new Date().getFullYear()} NoDelay - All rights reserved</span>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+              <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
+              <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             </div>
           </div>
 

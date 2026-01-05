@@ -1,147 +1,170 @@
 "use client";
 
-export default function ActionPreview() {
+import { useEffect, useMemo, useState } from "react";
+import { cn } from "@/lib/utils";
+
+type Workflow = {
+  id: string;
+  icon: string;
+  name: string;
+  status: "Running" | "Review" | "Queued";
+  description: string;
+  percent: number;
+  eta: string;
+};
+
+const WORKFLOWS: Workflow[] = [
+  {
+    id: "wf-1",
+    icon: "📄",
+    name: "Document QA pipeline",
+    status: "Running",
+    description: "Classifying 847 legal contracts",
+    percent: 76,
+    eta: "02:41",
+  },
+  {
+    id: "wf-2",
+    icon: "🤖",
+    name: "Support Copilot",
+    status: "Review",
+    description: "Drafted 28 responses for approval",
+    percent: 58,
+    eta: "Awaiting feedback",
+  },
+  {
+    id: "wf-3",
+    icon: "📊",
+    name: "Revenue anomaly guard",
+    status: "Running",
+    description: "Monitoring 14 live data streams",
+    percent: 92,
+    eta: "Live",
+  },
+  {
+    id: "wf-4",
+    icon: "🧠",
+    name: "Sales enablement copilot",
+    status: "Queued",
+    description: "Prepping product playbook translations",
+    percent: 18,
+    eta: "Starts in 04m",
+  },
+];
+
+const SUMMARY = [
+  {
+    label: "Active workflows",
+    value: 8,
+    detail: "+2 vs last week",
+  },
+  {
+    label: "Avg. completion",
+    value: "84%",
+    detail: "Target 80%",
+  },
+  {
+    label: "Time saved",
+    value: "316h",
+    detail: "This quarter",
+  },
+];
+
+const STATUS_STYLES: Record<Workflow["status"], string> = {
+  Running: "text-[#15803D] bg-[#ECFDF3]",
+  Review: "text-[#A16207] bg-[#FFFBEB]",
+  Queued: "text-[#2563EB] bg-[#DBEAFE]",
+};
+
+function Progress({ value }: { value: number }) {
   return (
-    <svg
-      viewBox="0 0 520 520"
-      xmlns="http://www.w3.org/2000/svg"
-      className="w-full h-auto"
-      preserveAspectRatio="xMidYMid meet"
-    >
-      {/* Background */}
-      <rect width="520" height="520" fill="#F2F1E9" />
+    <div className="flex items-center gap-2">
+      <div className="h-2 w-full rounded-full bg-[#E5E3DA]">
+        <div
+          className="h-2 rounded-full bg-[#D9F01B] transition-[width] duration-700 ease-out"
+          style={{ width: `${Math.min(100, value)}%` }}
+        />
+      </div>
+      <span className="text-xs font-medium text-[#111111]">{value}%</span>
+    </div>
+  );
+}
 
-      {/* App Header */}
-      <rect width="520" height="64" fill="#111111" />
-      <text
-        x="32"
-        y="40"
-        fontSize="18"
-        fontWeight="600"
-        fill="#FFFFFF"
-        fontFamily="system-ui"
-      >
-        NoDelay Automation
-      </text>
+export default function ActionPreview() {
+  const [activeIndex, setActiveIndex] = useState(0);
 
-      <text
-        x="488"
-        y="40"
-        fontSize="12"
-        textAnchor="end"
-        fill="#D9F01B"
-        fontFamily="system-ui"
-      >
-        Live
-      </text>
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setActiveIndex((index) => (index + 1) % WORKFLOWS.length);
+    }, 3200);
 
-      {/* Summary KPIs */}
-      <g>
-        <rect x="24" y="88" width="472" height="72" rx="12" fill="#FFFFFF" />
+    return () => window.clearInterval(timer);
+  }, []);
 
-        <text x="48" y="118" fontSize="12" fill="#6B7280">Active workflows</text>
-        <text x="48" y="140" fontSize="20" fontWeight="600" fill="#111111">6</text>
+  const highlightedId = useMemo(() => WORKFLOWS[activeIndex]?.id, [activeIndex]);
 
-        <text x="220" y="118" fontSize="12" fill="#6B7280">Tasks processed</text>
-        <text x="220" y="140" fontSize="20" fontWeight="600" fill="#111111">1,137</text>
+  return (
+    <section className="relative isolate flex flex-col gap-6 rounded-[16px] border border-[#111111] bg-white p-6 shadow-[6px_6px_0_#111111]">
+      <header className="flex flex-col gap-3">
+        <div className="flex items-center justify-between">
+          <div>
+            <p className="text-xs uppercase tracking-[0.25em] text-[#4B5563]">Automation control</p>
+            <h3 className="text-lg font-display text-[#111111]">Workflow command center</h3>
+          </div>
+          <div className="flex items-center gap-2 rounded-full border border-[#111111]/15 bg-[#F2F1E9] px-3 py-1">
+            <span className="relative flex size-2.5">
+              <span className="absolute inset-0 rounded-full bg-[#22C55E] opacity-60 animate-ping"></span>
+              <span className="relative size-full rounded-full bg-[#22C55E]"></span>
+            </span>
+            <span className="text-xs font-medium text-[#111111]">All systems live</span>
+          </div>
+        </div>
 
-        <text x="380" y="118" fontSize="12" fill="#6B7280">Success rate</text>
-        <text x="380" y="140" fontSize="20" fontWeight="600" fill="#111111">94%</text>
-      </g>
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+          {SUMMARY.map((item) => (
+            <div key={item.label} className="rounded-[12px] border border-[#111111]/12 bg-white/80 px-4 py-3">
+              <p className="text-xs text-[#4B5563]">{item.label}</p>
+              <p className="mt-1 text-xl font-display text-[#111111]">{item.value}</p>
+              <p className="text-xs text-[#9CA3AF]">{item.detail}</p>
+            </div>
+          ))}
+        </div>
+      </header>
 
-      {/* Section title */}
-      <text
-        x="24"
-        y="192"
-        fontSize="14"
-        fontWeight="600"
-        fill="#111111"
-        fontFamily="system-ui"
-      >
-        Active workflows
-      </text>
-
-      {/* === CARD COMPONENT TEMPLATE === */}
-
-      {/* Card 1 */}
-      <g>
-        <rect x="24" y="210" width="472" height="88" rx="14" fill="#FFFFFF" />
-
-        {/* Icon */}
-        <rect x="40" y="230" width="40" height="40" rx="10" fill="#D9F01B" />
-        <text x="60" y="258" fontSize="18" textAnchor="middle">📄</text>
-
-        {/* Title */}
-        <text x="96" y="242" fontSize="13" fontWeight="600" fill="#111111">
-          Document Processing
-        </text>
-
-        {/* Status */}
-        <rect x="380" y="228" width="92" height="22" rx="11" fill="#ECFDF3" />
-        <text x="426" y="243" fontSize="11" textAnchor="middle" fill="#15803D">
-          Running
-        </text>
-
-        {/* Description */}
-        <text x="96" y="260" fontSize="11" fill="#4B5563">
-          Extracting & classifying 847 files
-        </text>
-
-        {/* Progress */}
-        <rect x="96" y="274" width="300" height="6" rx="3" fill="#E5E7EB" />
-        <rect x="96" y="274" width="225" height="6" rx="3" fill="#748347" />
-        <text x="410" y="280" fontSize="11" fill="#748347">75%</text>
-      </g>
-
-      {/* Card 2 */}
-      <g>
-        <rect x="24" y="310" width="472" height="88" rx="14" fill="#FFFFFF" />
-
-        <rect x="40" y="330" width="40" height="40" rx="10" fill="#748347" />
-        <text x="60" y="358" fontSize="18" textAnchor="middle" fill="#FFFFFF">💬</text>
-
-        <text x="96" y="342" fontSize="13" fontWeight="600" fill="#111111">
-          Support Copilot
-        </text>
-
-        <rect x="380" y="328" width="92" height="22" rx="11" fill="#FFFBEB" />
-        <text x="426" y="343" fontSize="11" textAnchor="middle" fill="#A16207">
-          High load
-        </text>
-
-        <text x="96" y="360" fontSize="11" fill="#4B5563">
-          Responded to 234 customer queries
-        </text>
-
-        <rect x="96" y="374" width="300" height="6" rx="3" fill="#E5E7EB" />
-        <rect x="96" y="374" width="270" height="6" rx="3" fill="#D9F01B" />
-        <text x="410" y="380" fontSize="11" fill="#D9F01B">90%</text>
-      </g>
-
-      {/* Card 3 */}
-      <g>
-        <rect x="24" y="410" width="472" height="88" rx="14" fill="#FFFFFF" />
-
-        <rect x="40" y="430" width="40" height="40" rx="10" fill="#D9F01B" />
-        <text x="60" y="458" fontSize="18" textAnchor="middle">📊</text>
-
-        <text x="96" y="442" fontSize="13" fontWeight="600" fill="#111111">
-          Data Analysis
-        </text>
-
-        <rect x="380" y="428" width="92" height="22" rx="11" fill="#ECFDF3" />
-        <text x="426" y="443" fontSize="11" textAnchor="middle" fill="#15803D">
-          Stable
-        </text>
-
-        <text x="96" y="460" fontSize="11" fill="#4B5563">
-          Generated 56 actionable insights
-        </text>
-
-        <rect x="96" y="474" width="300" height="6" rx="3" fill="#E5E7EB" />
-        <rect x="96" y="474" width="240" height="6" rx="3" fill="#748347" />
-        <text x="410" y="480" fontSize="11" fill="#748347">80%</text>
-      </g>
-    </svg>
+      <div className="space-y-4">
+        {WORKFLOWS.map((workflow) => {
+          const isActive = workflow.id === highlightedId;
+          return (
+            <article
+              key={workflow.id}
+              className={cn(
+                "flex flex-col gap-3 rounded-[14px] border border-[#111111]/15 bg-white/80 px-4 py-4 transition-all",
+                isActive && "bg-[#F2F1E9] shadow-[4px_4px_0_#111111]",
+              )}
+            >
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex items-start gap-3">
+                  <div className="flex size-11 items-center justify-center rounded-xl border border-[#111111]/10 bg-[#D9F01B]/60 text-lg">
+                    <span>{workflow.icon}</span>
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-display text-[#111111]">{workflow.name}</h4>
+                    <p className="text-xs text-[#4B5563]">{workflow.description}</p>
+                  </div>
+                </div>
+                <span className={cn("rounded-full px-3 py-1 text-xs font-medium", STATUS_STYLES[workflow.status])}>
+                  {workflow.status}
+                </span>
+              </div>
+              <Progress value={workflow.percent} />
+              <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.2em] text-[#9CA3AF]">
+                <span>{workflow.eta}</span>
+                <span>NoDelay orchestration</span>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </section>
   );
 }

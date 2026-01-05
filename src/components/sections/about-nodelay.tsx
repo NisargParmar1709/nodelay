@@ -26,13 +26,13 @@ const team = [
 
 export default function AboutNoDelay() {
   return (
-    <section id="about" className="bg-[#F2F1E9] py-12 sm:py-16 px-6 sm:px-[3.5rem] lg:px-[4.5rem] xl:px-[7rem]">
-      <div className="max-w-[88rem] mx-auto">
+    <section id="about" className="bg-[#F2F1E9] section-shell section-shell--compact">
+      <div className="section-shell__inner">
         <div className="max-w-3xl mx-auto text-center mb-10">
-          <h2 className="font-display text-[40px] md:text-[48px] font-medium leading-[1.15] text-[#1A1A1A] mb-6">
+          <h2 className="heading-section text-[#1A1A1A] mb-6">
             About NoDelay
           </h2>
-          <p className="font-sans font-light text-[18px] text-[#4B5563] leading-[1.7]">
+          <p className="body-lead text-[#4B5563]">
             NoDelay is a service-based technology company delivering reliable, high-value digital solutions. 
             We specialize in AI automation, AI-driven tools, and custom intelligent systems that solve real problems. 
             Our identity is built on practical, usable AI products, stable high-quality solutions, and trust through working demonstrations—not just marketing.
@@ -40,7 +40,7 @@ export default function AboutNoDelay() {
         </div>
 
         <div className="mt-20">
-          <h3 className="font-display text-[28px] font-medium text-center text-[#1A1A1A] mb-12">
+          <h3 className="heading-sub text-center text-[#1A1A1A] mb-12">
             Our Team
           </h3>
           

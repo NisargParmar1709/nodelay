@@ -41,14 +41,14 @@ const SecurityReadiness = () => {
   ];
 
   return (
-    <section ref={sectionRef} id="security" className="bg-[#F1EFE7] py-12 lg:py-16 px-6 sm:px-[3.5rem] lg:px-[4.5rem] xl:px-[7rem] overflow-hidden">
-      <div className="max-w-[88rem] mx-auto">
+    <section ref={sectionRef} id="security" className="bg-[#F1EFE7] section-shell section-shell--compact overflow-hidden">
+      <div className="section-shell__inner">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
           
           <div className={`w-full lg:w-1/2 flex flex-col items-start transition-all duration-700 ease-out ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
           }`}>
-            <h2 className="text-[2.5rem] lg:text-[3rem] font-medium leading-[1.15] mb-10 font-display text-[#111111]">
+            <h2 className="heading-section text-[#111111] mb-10">
               Security and<br />
               delivery readiness
             </h2>
@@ -103,7 +103,7 @@ const SecurityReadiness = () => {
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2 relative h-[400px] lg:h-[480px] flex items-center justify-center">
+          <div className="w-full lg:w-1/2 relative h-[360px] sm:h-[420px] lg:h-[480px] flex items-center justify-center">
             <div className="relative w-full h-full max-w-[500px]">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-full h-full relative">

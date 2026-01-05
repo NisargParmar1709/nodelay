@@ -41,7 +41,7 @@ const Header = () => {
 
   return (
     <header
-      className={`sticky top-0 left-0 z-20 transition-all duration-300 ease-in-out w-full px-6 sm:px-[3.5rem] lg:px-[4.5rem] xl:px-[7rem] h-[80px] sm:h-[100px] border-b border-black/10 bg-[#F1EFE7] ${
+      className={`sticky top-0 left-0 z-20 transition-all duration-300 ease-in-out w-full layout-inline--narrow h-[80px] sm:h-[100px] border-b border-black/10 bg-[#F1EFE7] ${
         scrolled ? "shadow-sm" : ""
       }`}
     >
@@ -108,16 +108,7 @@ const Header = () => {
             </Link>
           </div>
 
-          <div className="flex lg:hidden items-center gap-4">
-            <Link href="#contact" className="flex items-stretch border border-[#111111]">
-              <div className="flex items-center px-4 py-2 min-h-[40px] bg-[#D9F01B]">
-                <span className="font-display font-medium text-[14px] text-[#111111]">Book a demo</span>
-              </div>
-              <div className="flex items-center justify-center size-[40px] border-l border-[#111111] bg-[#D9F01B]">
-                <ArrowRight className="w-4 h-4 text-[#111111]" />
-              </div>
-            </Link>
-            
+          <div className="flex lg:hidden items-center">
             <button 
               className="w-10 h-10 border border-[#111111] flex flex-col items-center justify-center gap-1.5 bg-[#F1EFE7]"
               aria-label="Menu"

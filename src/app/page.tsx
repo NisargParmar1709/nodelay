@@ -1,3 +1,4 @@
+// app/page.tsx
 import Header from "@/components/sections/header";
 import HeroSection from "@/components/sections/hero";
 import AIForBusiness from "@/components/sections/ai-for-business";
@@ -13,18 +14,49 @@ import Footer from "@/components/sections/footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#F1EFE7]">
+    <main className="min-h-screen bg-background text-foreground">
       <Header />
-      <HeroSection />
-      <AIForBusiness />
-      <FeatureBullets />
-      <HowItWorks />
-      <NoDelayInAction />
-      <ValueCards />
-      <OurCreations />
-      <AboutNoDelay />
-      <SecurityReadiness />
-      <ContactSection />
+      {/* Wrap page sections in a central container where needed — components can also add their own container */}
+      <section aria-label="Hero" className="pt-12">
+        <HeroSection />
+      </section>
+
+      <section aria-label="AI for business">
+        <AIForBusiness />
+      </section>
+
+      <section aria-label="Features">
+        <FeatureBullets />
+      </section>
+
+      <section aria-label="How it works">
+        <HowItWorks />
+      </section>
+
+      <section aria-label="NoDelay actions">
+        <NoDelayInAction />
+      </section>
+
+      <section aria-label="Value cards">
+        <ValueCards />
+      </section>
+
+      <section aria-label="Our creations">
+        <OurCreations />
+      </section>
+
+      <section aria-label="About NoDelay">
+        <AboutNoDelay />
+      </section>
+
+      <section aria-label="Security readiness">
+        <SecurityReadiness />
+      </section>
+
+      <section aria-label="Contact">
+        <ContactSection />
+      </section>
+
       <Footer />
     </main>
   );

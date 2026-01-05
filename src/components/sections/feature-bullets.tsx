@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import Image from "next/image"; // If not using Next.js replace with <img>
 import type { LucideIcon } from "lucide-react";
 import DashboardPreview from "../DashboardPreview";
 
@@ -22,7 +21,7 @@ export default function FeatureSection({
   features = [],
   mockupSrc = "/images/feature-mockup.png",
   className = "",
-}: Props) {
+}: Props) { 
   const sectionRef = useRef<HTMLElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [reduceMotion, setReduceMotion] = useState(false);
@@ -152,9 +151,9 @@ export default function FeatureSection({
         </div>
 
         {/* RIGHT: mockup + metric overlays */}
-        <div className="relative flex items-center justify-center">
+        <div className="relative flex flex-col items-center gap-6 sm:gap-0 sm:items-center sm:justify-center">
           <div
-            className="rounded-[12px] bg-white p-6 shadow-lg border border-[#111111] transform transition-all duration-700"
+            className="rounded-[14px] bg-white p-6 shadow-lg border border-[#111111] transition-all duration-700 w-full max-w-[min(420px,90vw)] sm:max-w-none sm:w-auto"
             style={{
               boxShadow:
                 "0 10px 30px rgba(17,17,17,0.1), inset 0 1px 0 rgba(255,255,255,0.6)",
@@ -162,16 +161,13 @@ export default function FeatureSection({
               opacity: isVisible ? 1 : 0,
             }}
           >
-            {/* Soft background blurred corner */}
-            <div className="relative w-[380px] h-[300px] rounded-xl overflow-hidden bg-gradient-to-b from-[#F2F1E9] to-[#E5E3DA]">
-              {/* Main mockup image - using SVG component */}
+            <div className="relative w-full aspect-[4/3] sm:w-[380px] sm:aspect-[19/15] rounded-xl overflow-hidden bg-gradient-to-b from-[#F2F1E9] to-[#E5E3DA]">
               <DashboardPreview className="w-full h-full" />
             </div>
           </div>
 
-          {/* Floating metric cards */}
           <div
-            className="absolute -left-6 -top-6 w-[220px] p-3 bg-white rounded-[12px] shadow-md border border-[#111111]"
+            className="relative w-full max-w-[min(240px,85vw)] sm:absolute sm:-left-6 sm:-top-6 sm:max-w-none sm:w-[220px] p-3 bg-white rounded-[12px] shadow-md border border-[#111111]"
             style={{
               transform: isVisible && !reduceMotion ? "translateY(0) scale(1)" : "translateY(12px) scale(.98)",
               opacity: isVisible ? 1 : 0,
@@ -187,7 +183,7 @@ export default function FeatureSection({
           </div>
 
           <div
-            className="absolute -right-4 bottom-0 w-[170px] p-3 bg-white rounded-[12px] shadow-sm border border-[#111111]"
+            className="relative w-full max-w-[min(210px,80vw)] sm:absolute sm:-right-4 sm:bottom-0 sm:max-w-none sm:w-[170px] p-3 bg-white rounded-[12px] shadow-sm border border-[#111111]"
             style={{
               transform: isVisible && !reduceMotion ? "translateY(0)" : "translateY(18px)",
               opacity: isVisible ? 1 : 0,
@@ -202,4 +198,4 @@ export default function FeatureSection({
       </div>
     </section>
   );
-}
+}     
